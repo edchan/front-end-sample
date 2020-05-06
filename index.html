@@ -1,0 +1,630 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Front-end sample code</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Front-end sample code">
+  <meta name="author" content="Edwardo Chan">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+
+      <div class="main-logo hide-mobile">
+        <a href="#">
+          <span>Facebook</span>
+        </a>
+      </div>
+      <div class="search-box">
+        <form>
+          <i class="fa fa-angle-left hide-desktop"></i>
+          <input type="text" name="keyword" placeholder="Search" value="Every Interaction">
+          <button type="submit" class="hide-mobile"><i class="fa fa-search"></i><span class="hidden">Submit</span></button>
+        </form>
+      </div>
+      <nav class="hide-mobile">
+        <ul class="nav1">
+          <li class="profile">
+            <a href="#">
+              <img src="images/ei-profile.png">
+              <span>Alex</span>
+            </a>
+          </li>
+          <li class="home">
+            <a href="#">
+              <span>Home</span>
+              <span class="home-counter">5</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="nav2">
+          <li class="friends">
+            <a href="#">
+              <span>Friends</span>
+            </a>
+          </li>
+          <li class="messages">
+            <a href="#">
+              <span>Messages</span>
+            </a>
+          </li>
+          <li class="world">
+            <a href="#">
+              <span>World</span>
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li class="security">
+            <a href="#">
+              <span>Security</span>
+            </a>
+          </li>
+          <li class="more">
+            <a href="#">
+              <span class="hidden">More</span>
+              <i class="fa fa-caret-down"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="container">
+
+      <div class="left-sidebar hide-mobile">
+        <div class="profile">
+          <div class="profile-img">
+            <a href="#"><img src="images/ei-logo.png" class="block"></a>
+          </div>
+          <h1><a href="#">Every Interaction</a> <img src="images/check.png"></h1>
+          <div class="profile-handle"><a href="#">@EveryInteraction</a></div>
+        </div>
+        <nav class="main-navigation">
+          <ul>
+            <li>
+              <a href="#" class="active">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Notes
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Email Signup
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Photos
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Reviews
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Videos
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Likes
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Posts
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="create-page">
+          <ul>
+            <li>
+              <a href="#" class="create-page-button">
+                Create a Page
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="main">
+        <div class="main-image-wrapper">
+          <img src="images/main-image.png" class="block">
+        </div>
+        <div class="below-main-image">
+          <div class="profile hide-desktop">
+            <div class="profile-img">
+              <a href="#"><img src="images/ei-logo.png" class="block"></a>
+            </div>
+            <div class="profile-info">
+              <h1><a href="#">Every Interaction</a> <img src="images/check.png"></h1>
+              <div class="profile-handle"><a href="#">@EveryInteraction</a></div>
+            </div>
+          </div>
+          <div class="menu">
+            <ul>
+              <li><a href="#" class="divider blue"><img src="images/thumbs-blue-icon.png" data-mobile-img="like-button-big.png" data-desktop-img="thumbs-blue-icon.png"> Liked <i class="fa fa-caret-down more hide-mobile"></i></a></li>
+              <li class="hide-desktop following"><a href="#" class="divider blue"><img src="images/follow-button-big.png"> Following <i class="fa fa-caret-down more"></i></a></li>
+              <li><a href="#" class="divider"><img src="images/messenger-icon.png" data-mobile-img="message-button-big.png" data-desktop-img="messenger-icon.png"> Message</a></li>
+              <li><a href="#"><i class="fa fa-ellipsis-h"></i> More <i class="fa fa-caret-down more hide-mobile"></i></a></li>
+            </ul>
+          </div>
+          <button class="contact-us-button">Contact Us</button>
+        </div>
+        <div class="mobile-contents hide-desktop">
+          <div class="review-score">
+            <div class="score"><span>4.7</span><img src="images/stars-big.png"></div>
+            <div class="location">Business service • London, United Kingdom</div>
+          </div>
+          <div class="mobile-menu">
+            <nav>
+              <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Posts</a></li>
+                <li><a href="#">Photos</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="page-info">
+            <div class="user-likes">
+              <img src="images/user-likes.png">
+              <div class="likes">
+                <div class="users">Alex Marin and 3 other friends like this</div>
+                <div class="total">309 likes</div>
+              </div>
+            </div>
+            <div class="review-info">
+              <div class="stars"><img src="images/stars-big-2.png"> 4.7/5</div>
+              <div class="reviews">3 reviews</div>
+            </div>
+            <div class="wrapper">
+              <div class="description">UI & web design studio focusing on interaction challenges and startups.</div>								
+              <div class="web"><a href="#">http://www.everyinteraction.com/</a></div>
+              <div class="phone"><a href="#">020 3514 0659</a></div>
+            </div>
+            <img src="images/map-big.png">
+            <div class="wrapper">
+              <div class="direction">
+                <img src="images/direction-big.png">
+                <div>
+                  <div>Metal Box Factory, 30 Great Guildford St</div>						
+                  <div class="grey">London, United Kingdom</div>
+                </div>
+                <div><a href="#">Get Directions</a></div>
+              </div>
+             </div>
+             <div class="see-all">
+               <a href="#">See All <i class="fa fa-angle-right"></i></a>
+             </div>
+          </div>
+
+          <div class="visitor-posts">
+            <div class="title">Visitor posts</div>
+            <div class="actions">
+              <div><a href="#">Write Post</a></div>
+              <div><a href="#">Share Photo</a></div>
+            </div>
+          </div>
+
+          <div class="user-reviews">
+            <div class="wrapper">
+              <div class="score">Reviews- 4.7 of 5</div>
+              <div class="reviewer">
+                <img src="images/reviewer-big.png">
+                <div class="info">
+                  <div class="review"><span>5</span><img src="images/reviewer-star-big.png"></div>
+                  <div class="time">1 year ago</div>
+                </div>
+              </div>
+            </div>
+            <div class="see-all">
+              <a href="#">See All <i class="fa fa-angle-right"></i></a>
+            </div>
+          </div>
+
+          <div class="photos">
+            <div class="title">Photos by Every Interaction</div>
+            <div class="photo-items">
+              <img src="images/photo-1-big.png">
+              <img src="images/photo-2-big.png">
+              <img src="images/photo-3-big.png">
+            </div>
+            <div class="see-all">
+              <a href="#">See All <i class="fa fa-angle-right"></i></a>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="content-wrapper">
+
+          <div class="content-left">
+
+            <div class="content-box no-border hide-mobile">
+              <div class="create-post-links">
+                <ul>
+                  <li class="status"><a href="#"><img src="images/status.png"> <span>Status</span></a></li>
+                  <li class="media"><a href="#"><img src="images/media.png"> <span>Photo/Video</span></a></li>
+                  <li class="profile"><a href="#"><img src="images/ei-profile.png"> <a href="#"> <i class="fa fa-caret-down profile"></i></a></li>
+                </ul>
+              </div>
+              <div class="create-post-form">
+                <div class="user-icon">
+                  <img src="images/ei-profile-article.png" class="block">
+                </div>
+                <form>
+                  <input type="text" name="comments" placeholder="Write a something on this Page...">
+                </form>
+              </div>
+            </div>
+
+            <div class="content-box">
+              <article>
+                <div class="author">
+                  <img src="images/ei-profile-article.png" class="border">
+                  <div class="author-name"><a href="#">Every Interaction</a></div>
+                  <div class="date-time">23 hrs • <img src="images/world-icon-big.png"></div>
+                </div>
+                <div class="text">
+                  <p>Perspective FM : #15 How to create a winning proposal with Dylan Baskind from Qwilr</p>
+                </div>
+                <div class="post-item">
+                  <a href="#">
+                    <img src="images/post-image-1.png" class="border block">
+                    <div class="post-details">
+                      <h2 class="title">#15 How to create a winning proposal with Dylan Baskind from Qwilr</h2>
+                      <p class="summary">This week Jon is joined by Dylan Baskind - designer/developer and founder of proposal writing tool Qwilr. We speak about Dylan's journey from working in the…</p>
+                      <p class="source">PERSPECTIVE.FM</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="social-icons">
+                  <ul>
+                    <li class="like"><a href="#"><img src="images/thumb-icon-big.png">Like</a></li>
+                    <li class="comment"><a href="#"><img src="images/comment-icon-big.png">Comment</a></li>
+                    <li class="share"><a href="#"><img src="images/share-icon-big.png">Share</a></li>
+                  </ul>
+                </div>
+              </article>
+              <div class="below-article hide-mobile">
+                <div class="comment-form">
+                  <div class="user-icon">
+                    <img src="images/ei-profile-article.png" class="block">
+                  </div>
+                  <form>
+                    <input type="text" name="comments" placeholder="Write a comment...">
+                    <button type="button" class="photo"><i class='fa fa-camera'></i><span class="hidden">Photo</span></button>
+                    <button type="button" class="emoticon"><i class='fa fa-meh-o'></i><span class="hidden">Emoticon</span></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <div class="content-box">
+              <article>
+                <div class="author">
+                  <img src="images/ei-profile-article.png" class="border">
+                  <div class="author-name"><a href="#">Every Interaction</a></div>
+                  <div class="date-time">12 August at 13:06 • <img src="images/world-icon-big.png"></div>
+                </div>
+                <div class="text">
+                  <p>Good culture in digital teams is all about people</p>
+                </div>
+                <div class="post-item">
+                  <a href="#">
+                    <img src="images/post-image-2.png" class="border block">
+                    <div class="post-details">
+                      <h2 class="title">Good culture evolves from the bottom up</h2>
+                      <p class="summary">The Government Digital Service (GDS) is leading the digital transformation of the UK government</p>
+                      <p class="source">MEDIUM.STFI.RE | BY ADAM SILVER</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="social-icons">
+                  <ul>
+                    <li class="like"><a href="#"><img src="images/thumb-icon-big.png">Like</a></li>
+                    <li class="comment"><a href="#"><img src="images/comment-icon-big.png">Comment</a></li>
+                    <li class="share"><a href="#"><img src="images/share-icon-big.png">Share</a></li>
+                  </ul>
+                </div>
+              </article>
+              <div class="below-article hide-mobile">
+                <div class="likes">
+                  <img src="images/liked-icon.png">
+                </div>
+                <div class="comment-form">
+                  <div class="user-icon">
+                    <img src="images/ei-profile-article.png" class="block">
+                  </div>
+                  <form>
+                    <input type="text" name="comments" placeholder="Write a comment...">
+                    <button type="button" class="photo"><i class='fa fa-camera'></i><span class="hidden">Photo</span></button>
+                    <button type="button" class="emoticon"><i class='fa fa-meh-o'></i><span class="hidden">Emoticon</span></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <div class="content-box">
+              <article>
+                <div class="author">
+                  <img src="images/ei-profile-article.png" class="border">
+                  <div class="author-name"><a href="#">Every Interaction</a></div>
+                  <div class="date-time">7 August at 12:24 • <img src="images/world-icon-big.png"></div>
+                </div>
+                <div class="text">
+                  <p>Creative brains need time off. A burned out designer is no use to anyone.</p>
+                </div>
+                <div class="post-item">
+                  <a href="#">
+                    <img src="images/post-image-3.png" class="border block">
+                    <div class="post-details">
+                      <h2 class="title">Creative brains need time off – Creative Review</h2>
+                      <p class="summary">Creative review</p>
+                      <p class="source">CREATIVEREVIEW.STFI.RE</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="social-icons">
+                  <ul>
+                    <li class="like"><a href="#"><img src="images/thumb-icon-big.png">Like</a></li>
+                    <li class="comment"><a href="#"><img src="images/comment-icon-big.png">Comment</a></li>
+                    <li class="share"><a href="#"><img src="images/share-icon-big.png">Share</a></li>
+                  </ul>
+                </div>
+              </article>
+              <div class="below-article hide-mobile">
+                <div class="likes">
+                  <img src="images/liked-icon.png">
+                </div>
+                <div class="comment-form">
+                  <div class="user-icon">
+                    <img src="images/ei-profile-article.png" class="block">
+                  </div>
+                  <form>
+                    <input type="text" name="comments" placeholder="Write a comment...">
+                    <button type="button" class="photo"><i class='fa fa-camera'></i><span class="hidden">Photo</span></button>
+                    <button type="button" class="emoticon"><i class='fa fa-meh-o'></i><span class="hidden">Emoticon</span></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+          </div>
+            
+          <div class="content-right hide-mobile">
+            <div class="content-box padding-10px">
+              <div>Business service • London, United Kingdom</div>
+              <div class="review-total-score">4.7 <img src="images/stars.png"></div>
+            </div>
+
+            <div class="content-box padding-10px">
+              <div class="search-posts">
+                <form>
+                  <i class="fa fa-search"></i>
+                  <input type="text" name="posts" placeholder="Search for posts on this Page"></i>
+                </form>
+              </div>
+            </div>
+
+            <div class="content-box">
+              <div class="page-summary">
+                <div class="page-likes">
+                  <img src="images/page-summary.png">
+                  <div class="text">
+                    <p>306 people like this</p>
+                    <p class="grey">Alex Marin and 3 other friends</p>
+                  </div>
+                </div>
+                <div class="page-visits">
+                  <img src="images/page-summary.png">
+                  <div class="text">
+                    <p>9 people have been here</p>
+                    <p class="grey">Alex Marin</p>
+                  </div>
+                </div>
+                <div class="page-invites">
+                  <img src="images/add-friends-icon.png">
+                  <div class="text">
+                    <p>Invite friends to like this page</p>
+                  </div>
+                </div>
+              </div>
+              <div class="review-summary">
+                <div class="review-score">4.7 <img src="images/star-white-icon.png"></div>
+                <div class="review-text">
+                  <div class="total-stars">4.7 of 5 stars</div>
+                  <div class="total-reviews">3 reviews</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="content-box">
+              <div class="title">
+                About
+              </div>
+              <a href="#"><img src="images/map.png"></a>
+              <div class="contact-info">
+                <div class="location flex">
+                  <img src="images/location.png" width="16" height="12">
+                  <p>Metal Box Factory, 30 Great Guildford St SE1 0HS London</p>
+                  <a href="#" class="save">Save</a>
+                </div>
+                <div class="phone flex">
+                  <img src="images/phone.png" width="16" height="12">
+                  <p>020 3514 0659</p>
+                </div>
+                <div class="ask flex">
+                  <img src="images/ask.png" width="16" height="16">
+                  <p><a href="#">Ask for Every Interaction’s hours</a></p>
+                </div>
+                <div class="web flex">
+                  <img src="images/web.png" width="16" height="12">
+                  <p><a href="#">http://ww.everyinteraction.com/</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="content-box">
+              <div class="write-review">
+                <div class="info">
+                  <div class="text">Share your opinion about <b>Every Interaction</b></div>
+                  <div class="review-score">
+                    <span class="review-score"><span>5</span><img src="images/star-white-icon.png"></span> You rated this place
+                  </div>
+                </div>
+                <div class="user-icon">
+                  <img src="images/ei-profile-article.png" class="block"> <a href="#">Write your review</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="content-box">
+              <div class="title">
+                Photos
+              </div>
+              <div class="photos-items">
+                <a href="#"><img src="images/photo-1.png"></a>
+                <a href="#"><img src="images/photo-2.png"></a>
+                <a href="#"><img src="images/photo-3.png"></a>
+                <a href="#"><img src="images/photo-4.png"></a>
+                <a href="#"><img src="images/photo-5.png"></a>
+                <a href="#"><img src="images/photo-6.png"></a>
+                <a href="#"><img src="images/photo-7.png"></a>
+                <a href="#"><img src="images/photo-8.png"></a>
+                <a href="#"><img src="images/photo-9.png"></a>
+              </div>
+            </div>
+
+            <div class="content-box">
+              <div class="title">
+                Reviews
+              </div>
+              <div class="review-summary">
+                <div class="review-score">4.7 <img src="images/star-white-icon.png"></div>
+                <div class="review-text">
+                  <div class="total-stars">4.7 of 5 stars</div>
+                  <div class="total-reviews">3 reviews</div>
+                </div>
+              </div>
+
+              <div class="review-reviewers">
+                <img src="images/reviews-image-1.png">
+                <div class="reviewer-info">
+                  <div class="reviewer-name"><a href="#">Alex Marin</a></div>
+                  <div class="reviewer-score"><span>5</span><img src="images/star-blue-icon.png"></div>
+                  <div class="reviewer-date">27 July 2015</div>
+                  <div class="social-icons">
+                    <ul>
+                      <li><a href="#"><img src="images/thumbs-icon.png">Like</a></li>
+                      <li><a href="#"><img src="images/comment-icon.png">Comment</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown"><a href="#"><i class="fa fa-angle-down"></i></a></div>
+                </div>
+              </div>
+
+              <div class="review-reviewers">
+                <img src="images/reviews-image-2.png">
+                <div class="reviewer-info">
+                  <div class="reviewer-name"><a href="#">Tom Hardy</a></div>
+                  <div class="reviewer-score"><span>5</span><img src="images/star-blue-icon.png"></div>
+                  <div class="reviewer-date">13 December 2014</div>
+                  <div class="social-icons">
+                    <ul>
+                      <li><a href="#"><img src="images/thumbs-icon.png">Like</a></li>
+                      <li><a href="#"><img src="images/comment-icon.png">Comment</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown"><a href="#"><i class="fa fa-angle-down"></i></a></div>
+                </div>
+              </div>
+
+              <div class="review-reviewers">
+                <img src="images/reviews-image-3.png">
+                <div class="reviewer-info">
+                  <div class="reviewer-name"><a href="#">Michael Fassbender</a></div>
+                  <div class="reviewer-score"><span>5</span><img src="images/star-blue-icon.png"></div>
+                  <div class="reviewer-date">27 July 2015</div>
+                  <div class="social-icons">
+                    <ul>
+                      <li><a href="#"><img src="images/thumbs-icon.png">Like</a></li>
+                      <li><a href="#"><img src="images/comment-icon.png">Comment</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown"><a href="#"><i class="fa fa-angle-down"></i></a></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="content-box">
+              <div class="title">
+                Liked by this page
+              </div>
+              <div class="liked-items">
+                
+                <div class="item div">
+                  <img src="images/liked-item-logo-1.png">
+                  <a href="#">Wordtracker</a>
+                  <button class="like-button"><img src="images/liked-items-icon.png"> Like</button>
+                </div>
+
+                <div class="item div">
+                  <img src="images/liked-item-logo-2.png">
+                  <a href="#">Rabbit & Hare</a>
+                  <button class="like-button"><img src="images/liked-items-icon.png"> Like</button>
+                </div>
+
+                <div class="item">
+                  <img src="images/liked-item-logo-3.png">
+                  <a href="#">Tribesports</a>
+                  <button class="like-button"><img src="images/liked-items-icon.png"> Like</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer>
+
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>

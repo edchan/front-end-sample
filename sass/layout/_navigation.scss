@@ -1,0 +1,17 @@
+.main-navigation {
+  a {
+    font-size: 14px;
+    display: block;
+    height: 32px;
+    line-height: 32px;
+    padding-left: 13px;
+    color: #4b4f56;
+
+    &.active, &:hover {
+      border-left: 3px solid #4267b2;
+      background: #dee0e3;
+      color: #000;
+      padding-left: 10px;
+    }
+  }
+}

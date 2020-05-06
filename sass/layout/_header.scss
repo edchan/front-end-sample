@@ -1,0 +1,124 @@
+
+
+@media (min-width: $min-width) {
+  header {
+    background: $header-background-color;
+    height: 42px;
+    border-bottom: 1px solid $header-border-color;
+  
+    .main-logo {
+      margin-right: 7px;
+  
+      span {
+        display: block;
+        @include replace-text('../images/fb-logo.png', 24px, 24px);
+      }
+    }
+  
+    nav {
+      position: absolute;
+      right: 10px;
+      display: flex;
+  
+      li {
+        display: block;
+        float: left;
+      }
+  
+      a {
+        color: #fff;
+        font-size: 12px;
+        display: block;
+        height: 24px;
+        line-height: 24px;
+      }
+  
+      .profile {
+        padding-right: 12px;
+        position: relative;
+      
+        img {
+          height: 24px;
+          width: 24px;
+          vertical-align: middle;
+          margin-right: 6px;
+        }
+  
+        &::after {
+          @include header-divider;
+        }
+      }
+  
+      .home {
+        padding-left: 12px;
+        padding-right: 12px;
+  
+        .home-counter {
+          background: rgba($color: #000000, $alpha: 0.1);
+          padding: 3px;
+          margin-left: 2px;
+          font-size: 10px;
+        }
+      }
+  
+      .nav2 {
+        padding-left: 17px;
+        padding-right: 11px;
+        position: relative;
+  
+        li {
+          margin-left: 6px;
+          margin-right: 6px;
+        }
+      }
+  
+      .friends {
+        span {
+          display: block;
+          @include replace-text('../images/friends-icon.png', 24px, 24px);
+        }
+      }
+  
+      .messages {
+        span {
+          display: block;
+          @include replace-text('../images/messages-icon.png', 24px, 24px);
+        }
+      }
+  
+      .world {
+        span {
+          display: block;
+          @include replace-text('../images/world-icon.png', 24px, 24px);
+        }
+        &::after {
+          @include header-divider;
+        }
+      }
+  
+      .security {
+        padding-left: 18px;
+        padding-right: 10px;
+        span {
+          display: block;
+          @include replace-text('../images/security-icon.png', 24px, 24px);
+        }
+      }
+  
+      .more {
+        i {
+          font-size: 16px;
+          color: #17233d;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $max-width) {
+  header {
+    background: $header-background-color;
+    height: 90px;
+    border-bottom: none;
+  }
+}

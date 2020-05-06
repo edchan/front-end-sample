@@ -1,0 +1,26 @@
+.liked-items {
+  .item {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+
+    > img {
+      display: block;
+      margin-right: 9px;
+    }
+
+    > a {
+      font-weight: 700;
+      color: #000;
+    }
+
+    > button {
+      margin-left: auto;
+      margin-right: 5px;
+    }
+
+    &.div {
+      border-bottom: 1px solid #cccccc;
+    }
+  }
+}

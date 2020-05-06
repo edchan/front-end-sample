@@ -1,0 +1,50 @@
+@media (min-width: $min-width) {
+
+  .search-box {
+    width: 446px;
+    position: relative;
+
+    input[type=text] {
+      border-radius: 2px;
+      height: 24px;
+      width: 446px;
+      padding: 7px 46px 7px 7px;
+    }
+
+    button {
+      position: absolute;
+      right: 0;
+      background: #f6f7f9;
+      height: 24px;
+      width: 46px;
+      border-bottom-right-radius: 2px;
+      border-top-right-radius: 2px;
+
+      .fa-search {
+        color: #525a68;
+      }
+    }
+  }
+}
+
+@media (max-width: $max-width) {
+
+  .search-box {
+    form {
+      padding-top: 15px;
+      display: flex;
+      justify-content: center;
+
+      input {
+        width: 80%;
+        background: #293e6a;
+        height: 58px;
+        border-radius: 10px;
+        font-size: 28px;
+        color: #fff;
+        text-align: center;
+      }
+    }
+
+  }
+}

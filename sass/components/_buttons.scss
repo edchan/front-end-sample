@@ -1,0 +1,32 @@
+.create-page-button {
+  background: #42b72a;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 6px 9px;
+  color: #fff;
+  border-radius: 2px;
+  display: inline-block;
+
+  &:hover {
+    background: #36a420;
+  }
+}
+
+.like-button {
+  width: 59px;
+  height: 24px;
+  border: 1px solid #ced0d4;
+  border-radius: 2px;
+  background: #f6f7f9;
+  color: #4d5157;
+  display: flex;
+  align-items: center;
+
+  img {
+    margin-right: 5px
+  }
+
+  &:hover {
+    background: rgba($color: #000000, $alpha: 0.05);
+  }
+}

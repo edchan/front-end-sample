@@ -1,0 +1,50 @@
+.left-sidebar {
+  width: 172px;
+  margin-right: 12px;
+
+  .profile-img {
+    border: 1px solid #dfe0e4;
+    width: min-content;
+    padding: 4px;
+    background: #fff;
+    border-radius: 2px;
+
+    img {
+      border: 1px solid #dfe0e4;
+      border-radius: 2px;
+    }
+  }
+
+  .profile {
+
+    h1 {
+      margin-top: 10px;
+
+      a {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #000;
+      }
+
+      img {
+        width: 14px;
+        height: 14px;
+      }
+    }
+  }
+
+  .profile-handle {
+    margin-top: 5px;
+    margin-bottom: 20px;
+
+    a {
+      color: #98949c;
+      font-size: 14px;
+    }
+  }
+
+  .create-page {
+    margin-top: 20px;
+  }
+}
